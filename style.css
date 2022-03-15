@@ -2,8 +2,8 @@ button {
     border: 0; // сброс толщины границ
 }
 
-body{
-    width: 100%;
+.container {
+    width: 1170px;
     margin: 0 auto;
 }
 
@@ -15,8 +15,10 @@ a{
 /*HEADER*/
 
 
-header{
+header .container{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .NinjaMainLogo{
@@ -35,8 +37,6 @@ header{
     display: inline-block;
     width: 128px;
     height: 64px;
-    margin-left: 73px;
-    margin-top: 10px;
 }
 
 .nav_links{
@@ -45,7 +45,7 @@ header{
     justify-content: center;
     margin-right: 100px;
     margin-left: 310px;
-    margin-top: 28px;
+    margin-top: 30px;
 }
 
 .links{
@@ -81,7 +81,6 @@ header{
 /*MAIN*/
 
 main{
-    width: 100%;
     height: 2648px;
     background: center / cover no-repeat url('./img/background.svg');
 }
@@ -98,7 +97,7 @@ main{
 
 .hero-left-side{
     z-index: 2;
-    margin-top: 105px;
+    margin-top: 70px;
 }
 
 .hero-left-side h1{
@@ -159,13 +158,17 @@ main{
 .video-part{
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin:0 10px 100px 10px;
 }
 
 .video-part h1{
     position: absolute;
     z-index: 10;
-    left: 393px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     font-family: 'Playfair Display' , sans-serif;
     font-size: 60px;
     color: white;
@@ -175,14 +178,17 @@ main{
 .video-part button{
     position: absolute;
     z-index: 10;
-    left: 393px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
     font-family: 'Raleway' , sans-serif;
     font-size: 21px;
     background-color: white;
     width: 200px;
     height: 65px;
     color: #4BA87D;
-    margin: 400px 0 0 200px;
+    margin-top: 400px;
 }
 
 .video-img{
@@ -253,7 +259,6 @@ main{
     width: 300px;
     object-fit: cover;
     height: 369px;
-
 }
 
 .card-2 .white-box{
@@ -289,9 +294,7 @@ main{
 .description{
     margin-top: 100px;
     width: 365px;
-    height: 324px;
-    margin-left: 46px;
-    margin-right: 0;
+    margin-left: 20px;
 }
 
 .description h1{
@@ -318,6 +321,7 @@ main{
 .gallery{
     display: flex;
 }
+
 
 .gallery img{
     width: 340px;
@@ -384,9 +388,8 @@ main{
 }
 
 .brands .logos{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
     width: 930px;
     height: 50px;
     margin: 0 auto;
@@ -431,7 +434,7 @@ main{
 .footer{
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 300px 0 0;
 }
 
 .logo-foot{
@@ -473,4 +476,290 @@ hr{
 
     font-family: "Roboto Thin",sans-serif;
     font-size: 15px;
+}
+
+/*ADAPTIVE*/
+
+/*DONE*/
+@media screen and (max-width: 1280px) {
+    .container{
+        width: 1140px;
+    }
+
+    .NinjaMainLogo{
+        margin-left: 250px;
+    }
+    .nav_links{
+        margin-right: 300px;
+        margin-left: 200px;
+    }
+    .cards{
+        display: flex;
+    }
+    .sec-3 .description{
+        margin-left: 30px;
+    }
+    .sec-4{
+        margin-bottom: 150px;
+    }
+
+    .sec-4 .gallery{
+        display: flex;
+    }
+    .sec-4 .gallery-up{
+        display: flex;
+    }
+}
+
+/*DONE*/
+@media screen and (max-width: 1199px) {
+    .container{
+        width: 960px;
+    }
+
+    .NinjaMainLogo{
+        justify-content: center;
+    }
+    .nav_links{
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    .hero-left-side{
+        margin-left: 50px;
+    }
+    .hero-photo{
+        top: -20px;
+        z-index: 1;
+        left: -180px;
+    }
+
+    .cards{
+        display: flex;
+    }
+    .description{
+        width: 250px;
+    }
+    .sec-3 .description h1{
+        font-size: 35px;
+    }
+
+    .sec-3 .description span{
+        font-size: 19px;
+    }
+
+    .sec-4{
+        margin-bottom: 150px;
+    }
+
+    .sec-4 .gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec-4 .gallery-up{
+        display: flex;
+        margin: 30px 0 ;
+    }
+
+}
+
+
+/*Добавить бургер*/
+@media screen and (max-width: 991px) {
+    .container{
+        width: 720px;
+    }
+    .NinjaMainLogo{
+        justify-content: center;
+    }
+    .nav_links{
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+    .links{
+        display: none;
+    }
+
+    .hero-left-side{
+        margin-left: 50px;
+    }
+
+    .hero-photo{
+        top: -20px;
+        z-index: 1;
+        left: -350px;
+    }
+
+    .sec-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sec-3 .cards{
+        display: flex;
+        justify-content: start;
+        margin: 0 50px 0 50px;
+    }
+    .sec-3 .description{
+        width: 600px;
+        margin: 0 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sec-4 .gallery{
+        margin-right: 350px;
+    }
+
+    .sec-4 h1{
+        margin-right: 350px;
+    }
+    .sec-4 .email{
+        margin-right: 350px;
+    }
+
+    .brands h1{
+        margin-right: 200px;
+    }
+    .brands .logos{
+        width: 720px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+
+    .logo-foot{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .footer-links{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+/*Доделать все начиная с hero*/
+@media screen and (max-width: 767px) {
+    .container {
+        width: 540px;
+    }
+
+    .NinjaMainLogo{
+        justify-content: center;
+    }
+
+    .nav_links{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .links{
+        display: none;
+    }
+
+    .hero{
+        margin-bottom: 500px;
+    }
+    .hero-left-side{
+        margin-top: 0;
+    }
+
+    .hero-photo{
+        width: 700px;
+        height: 400px;
+        top: 300px;
+        z-index: 1;
+        left: -550px;
+    }
+
+    .sec-3 .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: -600px;
+    }
+
+    .card-1{
+        margin-left: 47px;
+    }
+    .card-2{
+        margin-top: 20px;
+    }
+
+    .sec-3 .description{
+        width: 500px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .gallery{
+        margin-left: -200px;
+        margin-top: 700px;
+    }
+    .gallery-up{
+        flex-direction: column;
+    }
+    .gallery-1{
+        margin-bottom: 30px;
+    }
+
+    .sec-4 h1{
+        text-align: start;
+        width: 400px;
+        margin-left: -180px;
+        margin-bottom: 180px;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: -200px;
+        margin-bottom: 150px;
+    }
+    .email input{
+        margin-bottom: 10px;
+    }
+
+    .brands{
+        margin-top: 700px;
+        margin-left: -100px;
+    }
+
+    .brands h1{
+        width: 400px;
+    }
+
+    .footer-links{
+        grid-template-columns: 1fr 1fr ;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .container{
+        width: 100%;
+    }
+    header{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links{
+        display: none;
+    }
+    main{
+        width: 400px;
+    }
+
+
 }
