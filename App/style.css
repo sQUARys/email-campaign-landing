@@ -763,36 +763,48 @@ hr{
 
     .hero-left-side{
         width: 300px;
-        margin-left: -500px;
-        margin-top: 100px;
+        margin-left: -475px;
+        margin-top: 125px;
     }
 
     .hero-left-side h1{
         font-size: 45px;
         margin-bottom: 5px;
+        width: 150px;
     }
 
     .hero-left-side .desc{
         font-size: 19px;
         width: 320px;
         margin-left: 30px;
+        margin-top: 150px;
     }
 
     .hero-photo{
         width: 350px;
         height: 250px;
         margin-top: 200px;
-        top: 120px;
+        top: -150px;
         z-index: 1;
         left: -275px;
     }
     .hero-buttons{
-        margin-top: 100px;
+        margin-top: 30px;
         margin-left: 30px;
+        display: flex;
+    }
+
+    .hero-buttons button{
+        width: 200px;
+    }
+    .hero-buttons :nth-child(1){
+        margin-top: 35px;
+        min-width: 150px;
     }
 
     .hero-buttons :nth-child(2){
         margin-top: 35px;
-        margin-left: 0;
+        margin-left: 30px;
+        min-width: 150px;
     }
 }
