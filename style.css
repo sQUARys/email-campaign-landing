@@ -640,7 +640,7 @@ hr{
 }
 
 
-/*Доделать все начиная с hero*/
+/*DONE*/
 @media screen and (max-width: 767px) {
     .container {
         width: 540px;
@@ -743,23 +743,56 @@ hr{
 
 }
 
+/*Переделать по макету все*/
 @media screen and (max-width: 575px) {
     .container{
-        width: 100%;
+        width: 350px;
     }
-    header{
-        width: 70%;
+
+    header .container{
         display: flex;
         flex-direction: column;
-        align-items: center;
+    }
+    .NinjaMainLogo{
+        margin-left: -30px;
     }
 
-    .links{
-        display: none;
-    }
-    main{
-        width: 400px;
+    .sign_up_btn{
+        margin-left: 175px;
     }
 
+    .hero-left-side{
+        width: 300px;
+        margin-left: -500px;
+        margin-top: 100px;
+    }
 
+    .hero-left-side h1{
+        font-size: 45px;
+        margin-bottom: 5px;
+    }
+
+    .hero-left-side .desc{
+        font-size: 19px;
+        width: 320px;
+        margin-left: 30px;
+    }
+
+    .hero-photo{
+        width: 350px;
+        height: 250px;
+        margin-top: 200px;
+        top: 120px;
+        z-index: 1;
+        left: -275px;
+    }
+    .hero-buttons{
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+
+    .hero-buttons :nth-child(2){
+        margin-top: 35px;
+        margin-left: 0;
+    }
 }
