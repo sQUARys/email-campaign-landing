@@ -24,7 +24,6 @@ header .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1170px;
 }
 
 .NinjaMainLogo{
@@ -456,23 +455,6 @@ main{
     margin: 0 auto 40px auto;
 }
 
-/*.NinjaMainLogo{*/
-/*    padding-top: 28px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*}*/
-
-/*.NinjaMainLogo span{*/
-/*    font-family: 'Raleway', sans-serif;*/
-/*    font-weight: 900;*/
-/*    font-size: 35px;*/
-/*}*/
-
-/*.logo_img{*/
-/*    display: inline-block;*/
-/*    width: 128px;*/
-/*    height: 64px;*/
-/*}*/
 .footer-links{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -494,7 +476,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100px;
+    padding: 10px 0 100px 0;
 }
 
 .info .text{
@@ -511,26 +493,38 @@ hr{
 
 /*ADAPTIVE*/
 
+/*DONE*/
 @media screen and (max-width: 1280px) {
-    body{
-        max-width: 1140px;
-    }
-
     .container{
         width: 1140px;
     }
 
-
 }
 
+/*DONE*/
 @media screen and (max-width: 1199px) {
-    body{
-        max-width: 960px;
-    }
     .container{
         width: 960px;
     }
 
+    .hero{
+        width: 960px;
+    }
+
+    .hero-left-side{
+        padding: 0 0 0 300px;
+    }
+
+    .hero-photo{
+        left: -200px;
+    }
+    .brands .logos{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 30px;
+    }
+    .brands .logos img{
+        justify-self: center;
+    }
 
 }
 
@@ -543,26 +537,334 @@ hr{
     .container{
         width: 720px;
     }
+
+    .links{
+        display: none;
+    }
+
+    .hero{
+        width: 700px;
+        margin-bottom: 150px;
+    }
+
+    .hero-photo{
+        left: -300px;
+    }
+
+    .video-part h1{
+        margin-top: 150px;
+    }
+
+    .video-part button{
+        margin-top: 300px;
+    }
+
+    .video-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brands{
+        width: 100%;
+    }
+    .brands .logos{
+        width: 75%;
+    }
 }
 
 
 /*DONE*/
 @media screen and (max-width: 767px) {
-    body{
-        max-width: 540px;
-    }
     .container {
         width: 540px;
     }
 
+    .links{
+        display: none;
+    }
+
+    header{
+        margin-bottom: 150px;
+    }
+
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 300px;
+    }
+
+    .hero-left-side{
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .hero-photo{
+        width: 100%;
+        position: static;
+        margin-top: 10px;
+    }
+
+    .video-part h1{
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .video-part button{
+        margin-top: 200px;
+    }
+
+    .video-img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-up{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .gallery-1{
+        margin-bottom: 10px;
+    }
+
+    .gallery-1 img{
+        margin-right: 0;
+    }
+
+    .email{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .email input{
+        margin-right: 0;
+    }
+
+    .brands{
+        width: 100%;
+        justify-content: center;
+    }
+    .brands h1{
+        text-align: center;
+    }
+    .brands .logos{
+        width: 50%;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .brands .logos img{
+        margin: 0 auto;
+    }
+
+    .footer-links{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0 100px 0;
+    }
+
+    .info .text{
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+
 }
 
-/*Done*/
+
+/*DONE*/
 @media screen and (max-width: 575px) {
-    body{
-        max-width: 350px;
-    }
     .container {
         width: 350px;
+    }
+
+    .links{
+        display: none;
+    }
+    .nav_links{
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .hero{
+        width: 100%;
+        margin: 0 auto 200px auto;
+    }
+
+    .hero-left-side{
+        margin-top: 10px;
+    }
+    .hero-left-side h1{
+        font-size: 45px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .hero-left-side .desc{
+        font-size: 19px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-buttons{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-buttons :nth-child(1){
+        margin-top: 35px;
+        font-size: 17px;
+        width: 45%;
+        height: 40px;
+    }
+    .hero-buttons :nth-child(2){
+        margin-top: 35px;
+        font-size: 17px;
+        width: 45%;
+        height: 40px;
+        margin-left: 20px;
+    }
+
+    .video-part{
+        margin-bottom: 30px;
+    }
+
+    .video-part h1{
+        font-size: 25px;
+        margin-top: 60px;
+    }
+
+    .video-part button{
+        font-size: 16px;
+        width: 45%;
+        height: 40px;
+        margin-top: 125px;
+    }
+
+    .sec-3{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .cards{
+        width: 100%;
+    }
+    .card-1{
+        height: 70%;
+        width: 70%;
+        margin: 0 auto 20px auto;
+    }
+
+    .card-1 img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-2{
+        height: 70%;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .card-2 img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .description{
+        margin-top: 30px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .description h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .description .description__span{
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+        font-size: 19px;
+    }
+
+    .sec-4 .gallery{
+        margin: 0 auto 40px auto;
+    }
+
+    .gallery img{
+        width: 80%;
+        height: 100%;
+    }
+    .gallery-1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gallery-2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .gallery-3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .learn__title{
+        font-size: 35px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .email{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .email input{
+        display: block;
+        width: 80%;
+        height: 100%;
+        font-size: 19px;
+        margin-bottom: 10px;
+    }
+
+    .get-started{
+        width: 100%;
+    }
+
+    .get-started h1{
+        font-size: 55px;
+        text-align: center;
     }
 }
