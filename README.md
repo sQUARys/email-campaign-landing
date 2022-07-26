@@ -13,7 +13,7 @@ Adaptive site layout for creating stunning email campaigns. Beautiful and minima
 
 
 ## Site View
-
+<img src="  https://github.com/sQUARys/email-campaign-landing/blob/main/img/animation.gif" alt="Site Gif"/>
 
 ## Contact
 <div id="badges">
